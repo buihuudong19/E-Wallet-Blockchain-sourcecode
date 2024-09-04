@@ -1,3 +1,19 @@
+package main
+
+import (
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"strconv"
+	"time"
+
+	"github.com/hyperledger/fabric-contract-api-go/contractapi"
+)
+
+type EwalletContract struct {
+	contractapi.Contract
+}
+
 func (s *EWalletContract) UpdateTranById(
     ctx contractapi.TransactionContextInterface, 
     assetID string,  
