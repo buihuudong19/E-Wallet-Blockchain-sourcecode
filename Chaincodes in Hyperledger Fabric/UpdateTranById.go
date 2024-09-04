@@ -14,7 +14,7 @@ type EwalletContract struct {
 	contractapi.Contract
 }
 
-func (s *EWalletContract) UpdateTranById(
+func (s *EwalletContract) UpdateTranById(
     ctx contractapi.TransactionContextInterface, 
     assetID string,  
     createDate time.Time,
