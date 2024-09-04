@@ -10,11 +10,11 @@ import (
 	"github.com/hyperledger/fabric-contract-api-go/contractapi"
 )
 
-type EWalletContract struct {
+type EwalletContract struct {
 	contractapi.Contract
 }
 
-func (t *EWalletContract) GetAllTrans(
+func (t *EwalletContract) GetAllTrans(
 	ctx contractapi.TransactionContextInterface) ([]Transaction, error) {
 	queryString := `{
 						"selector": {
