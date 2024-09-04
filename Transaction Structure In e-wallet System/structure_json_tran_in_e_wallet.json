@@ -1,0 +1,84 @@
+{
+  "buyer_info": {
+    "user_id": "123456789",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "+123456789"
+  },
+  "merchant_info": {
+    "merchant_id": "987654321",
+    "merchant_name": "XYZ Store"
+  },
+  "order_details": {
+    "order_id": "ORD20230904001",
+    "items": [
+      {
+        "product_name": "Product 1",
+        "quantity": 2,
+        "price": 100.00
+      },
+      {
+        "product_name": "Product 2",
+        "quantity": 1,
+        "price": 200.00
+      }
+    ],
+    "total_amount": 400.00,
+    "currency": "USD"
+  },
+  "payment_info": {
+    "payment_method": "e-wallet",
+    "payment_amount": 400.00,
+    "transaction_id": "TXN20230904001",
+    "transaction_time": "2024-09-04T10:30:00Z",
+    "transaction_status": "Success"
+  },
+  "authentication_info": {
+    "otp_code": "123456",
+    "auth_method": "OTP"
+  },
+  "additional_info": {
+    "discount_code": "DISCOUNT2024",
+    "fees": {
+      "transaction_fee": 10.00,
+      "service_fee": 5.00
+    }
+  }
+}
+
+******************Explanation*********************
+buyer_info: Information about the buyer.
+    user_id: Unique identifier for the user.
+    name: Full name of the buyer.
+    email: Email address of the buyer.
+    phone: Contact phone number of the buyer.
+
+merchant_info: Information about the seller or merchant.
+    merchant_id: Unique identifier for the merchant.
+    merchant_name: Name of the store or business.
+order_details: Details of the order being paid for.
+  order_id: Unique identifier for the order.
+  items: Array of items included in the order, each containing:
+    product_name: Name of the product.
+    quantity: Quantity of the product.
+    price: Price per unit of the product.
+  total_amount: Total cost of the order.
+  currency: Currency used in the transaction.
+
+payment_info: Details regarding the payment transaction.
+  payment_method: Method of payment, in this case, an e-wallet.
+  payment_amount: Amount paid for the order.
+  transaction_id: Unique identifier for the payment transaction.
+  transaction_time: Timestamp of when the transaction was made.
+  transaction_status: Status of the transaction (e.g., "Success", "Failed").
+
+authentication_info: Information related to transaction authentication.
+  otp_code: One-Time Password used for transaction authentication.
+  auth_method: Method of authentication (e.g., "OTP", "Fingerprint").
+
+additional_info: Any additional information related to the transaction.
+  discount_code: Code used for any discounts applied to the order.
+  fees: Object containing any additional fees, such as:
+    transaction_fee: Fee charged for processing the transaction.
+    service_fee: Additional service fees.
+
